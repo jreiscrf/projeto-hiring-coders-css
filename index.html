@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" 
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+    crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,600;1,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Jonathan Reis</title>
+</head>
+<body>
+    
+    <header>
+        <div>
+            <img class="img" src="./eu.jpeg" alt="Eu">
+        </div>
+
+        <ul>
+            <li>
+                <a target="_blank" href="https://github.com/jreiscrf">github</a>
+            </li>
+            <li>
+                <a target="_blank" href="mailto:jonathan.reis.torres@gmail.com">email</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://wa.me/11959862964">whatsapp</a>
+            </li>
+        </ul>
+    </header>
+
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Jonathan Reis</h1>
+                <h5>Front-End Developer</h5>
+            </div>
+
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fas fa-sort-down"></i>
+            </div>
+
+            <div style="display: none;" id="about">
+                <p>
+                    Jonathan Reis é estudante de Análise e Desenvolvimento de Sistemas no Centro Universitário SENAC, 24 anos, natural do Rio de Janeiro.
+                    Busca oportunidade para por em prática seus conhecimentos técnicos em programação a fim de contribuir para o crescimento da empresa e desenvolver sua experiência profissional.
+                </p>
+            </div>
+
+            <div class="form">
+                <div>
+                    <p>
+                        Deixe seu contato.
+                    </p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="seu melhor email :)">
+                    <button>enviar!</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script>
+        function displayAbout() {
+            let arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            let display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
